@@ -1,0 +1,22 @@
+---
+import GlobalLayout from '../layouts/GlobalLayout.astro';
+---
+
+<GlobalLayout>
+		<p id="track"></p>
+		<p id="time"></p>
+		<script>
+			import { formatDistanceToNow } from "date-fns";
+			async function getSong() {
+				const response = await fetch("https://coolapi.live");
+				const data = await response.json();
+				const trackEl = document.querySelector('#track');
+				let d = new Date(0);
+				d.setUTCSeconds(data.lastUpdated);
+				d = formatDistanceToNow(d, { addSuffix: true });
+				const string = `${data.track} by ${data.artist} about ${d}.`;
+				if (trackEl) trackEl.textContent = string;
+			}
+			getSong();
+		</script>
+</GlobalLayout>
