@@ -1,5 +1,11 @@
 ---
 import "../styles/global.css";
+
+interface Props {
+  back?: boolean;
+}
+
+const { back = false } = Astro.props;
 ---
 
 <html lang="en">
@@ -10,9 +16,30 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body>
-    <main>
-      <slot />
-    </main>
+  <body class="mx-10 tracking-tight text-neutral-800 dark:text-neutral-100">
+    <div class="grid grid-cols-12 gap-5 pt-24">
+      {
+        back && (
+          <nav class="col-span-2 col-start-2">
+            <a
+              class="sticky top-10 text-base leading-none text-neutral-400 hover:text-blue-500"
+              href="/"
+            >
+              ← Back to Home
+            </a>
+          </nav>
+        )
+      }
+      <div class:list={["col-span-6", { "col-start-4": back === false }]}>
+        <main>
+          <slot />
+        </main>
+        <footer class="pb-14 pt-36">
+          <small class="dimmed-text text-base"
+            >&copy; {new Date().getFullYear()}</small
+          >
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,22 +1,53 @@
 ---
-import GlobalLayout from '../layouts/GlobalLayout.astro';
+import { getHome } from "@utils/api";
+import { type projectNavItem } from "@utils/types";
+
+import GlobalLayout from "@layouts/GlobalLayout.astro";
+import PageTitle from "@components/PageTitle.astro";
+import ProjectList from "@components/ProjectList.astro";
+import PortableText from "@components/PortableText.astro";
+import TextBlock from "@components/TextBlock.astro";
+import Currently from "@components/Currently.html";
+
+interface Props {
+  bio: string;
+  projectNavItems: projectNavItem[];
+  contactItems: contactItem[];
+}
+
+interface contactItem {
+  label: string;
+  url: string;
+}
+
+const data = await getHome();
+const { bio, projectNavItems, contactItems } = data as Props;
 ---
 
 <GlobalLayout>
-		<p id="track"></p>
-		<p id="time"></p>
-		<script>
-			import { formatDistanceToNow } from "date-fns";
-			async function getSong() {
-				const response = await fetch("https://coolapi.live");
-				const data = await response.json();
-				const trackEl = document.querySelector('#track');
-				let d = new Date(0);
-				d.setUTCSeconds(data.lastUpdated);
-				d = formatDistanceToNow(d, { addSuffix: true });
-				const string = `${data.track} by ${data.artist} about ${d}.`;
-				if (trackEl) trackEl.textContent = string;
-			}
-			getSong();
-		</script>
+  <div class="space-y-16">
+    <PageTitle>Anthony Bruno</PageTitle>
+    <TextBlock>
+      <PortableText value={bio} />
+    </TextBlock>
+
+    <ProjectList title="Projects" items={projectNavItems} />
+
+    <div>
+      <h2 class="pb-8">Get in touch</h2>
+      <ul class="space-y-4">
+        {
+          contactItems.map((item: contactItem) => (
+            <li>
+              <a class="after:content-['_↗']" href={item.url}>
+                <span class="underline">{item.label}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <Currently client:load />
+  </div>
 </GlobalLayout>

@@ -1,0 +1,43 @@
+---
+import { type projectNavItem } from "@utils/types";
+
+interface Props {
+  title: string;
+  items: projectNavItem[];
+}
+
+const { title, items } = Astro.props;
+const path = Astro.url.pathname;
+let filteredItems = items;
+
+if (path.includes("/project/")) {
+  filteredItems = items.filter(
+    item => item.url !== path.replace("/project/", "")
+  );
+}
+---
+
+<div>
+  <h2 class="pb-8">{title}</h2>
+  <ul class="space-y-4">
+    {
+      filteredItems.map((item: projectNavItem) => (
+        <li>
+          <a
+            class="group block"
+            href={item.blank ? item.url : `/project/${item.url}`}
+            target={item.blank ? "_blank" : "_self"}
+          >
+            <div class="flex items-center">
+              <h6 class="grow group-hover:text-blue-500">{item.title}</h6>
+              <span class="text-blue-500 opacity-0 transition-opacity group-hover:opacity-100">
+                {item.action}
+              </span>
+            </div>
+            <span class="dimmed-text">{item.subtitle}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

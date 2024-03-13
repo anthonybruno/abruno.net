@@ -1,0 +1,111 @@
+---
+import { getProjectList, getProjects } from "@utils/api";
+import { type projectNavItem } from "@utils/types";
+
+import GlobalLayout from "@layouts/GlobalLayout.astro";
+import PictureBlock from "@components/PictureBlock.astro";
+import PageTitle from "@components/PageTitle.astro";
+import ProjectList from "@components/ProjectList.astro";
+import TextBlock from "@components/TextBlock.astro";
+import PortableText from "@components/PortableText.astro";
+
+export async function getStaticPaths() {
+  return await getProjects();
+}
+
+const data = await getProjectList();
+
+interface Props {
+  technicalItems: string[];
+  strategyItems: string[];
+  actionItems: actionItem[];
+  title: string;
+  body: any;
+  primaryImage: primaryImageObj;
+}
+
+interface primaryImageObj {
+  image: any;
+  alt: string;
+}
+
+interface actionItem {
+  url: string;
+  label: string;
+}
+
+interface ProjectItems {
+  projectNavItems: projectNavItem[];
+}
+
+const {
+  technicalItems,
+  strategyItems,
+  actionItems,
+  title,
+  body,
+  primaryImage,
+} = Astro.props;
+
+const { projectNavItems } = data as ProjectItems;
+---
+
+<GlobalLayout back={true}>
+  <div class="pb-8">
+    <PictureBlock image={primaryImage.image} alt={primaryImage.alt} />
+  </div>
+
+  <div class="space-y-16">
+    <PageTitle>
+      {title}
+    </PageTitle>
+    <div class="flex items-start space-x-14">
+      <div>
+        <h5>Technical</h5>
+        <ul class="text-neutral-400">
+          {
+            technicalItems.map((item: string) => (
+              <li>
+                <span>{item}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <h5>Strategy</h5>
+        <ul class="text-neutral-400">
+          {
+            strategyItems.map((item: string) => (
+              <li>
+                <span>{item}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <TextBlock>
+      <PortableText value={body} />
+    </TextBlock>
+    <div>
+      <ul class="space-y-4">
+        {
+          actionItems.map((item: actionItem) => (
+            <li>
+              <a class="group text-blue-500" href={item.url}>
+                <span class="underline decoration-transparent underline-offset-2 transition-all group-hover:decoration-blue-200">
+                  {item.label}
+                </span>
+                <span>→</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="pt-36">
+    <ProjectList title="Other projects" items={projectNavItems} />
+  </div>
+</GlobalLayout>

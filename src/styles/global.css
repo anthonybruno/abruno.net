@@ -9,6 +9,13 @@
   src: url("/fonts/Inter-Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Inter-SemiBold.woff2") format("woff2");
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
@@ -23,5 +30,16 @@
     body {
       @apply bg-black text-white;
     }
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-xl font-semibold;
+  }
+}
+
+@layer components {
+  .dimmed-text {
+    @apply text-neutral-400 dark:text-neutral-500;
   }
 }
