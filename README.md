@@ -6,7 +6,13 @@ I am interested in spearheading engineering-wide strategies and managing intrica
 
 [**View Portfolio ↗**](https://abruno.net)
 
-## 🌎 Built with
+## ✨ Get in touch
+
+- [Email](mailto:anthonybruno@gmail.com)
+- [Read.cv](https://read.cv/abruno)
+- [LinkedIn](https://linkedin.com/in/brunotony)
+
+## 📍 Built with
 
 **Tech**
 
