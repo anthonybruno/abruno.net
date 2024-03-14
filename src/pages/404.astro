@@ -1,0 +1,16 @@
+---
+import GlobalLayout from "../layouts/GlobalLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
+import TextBlock from "../components/TextBlock.astro";
+
+const formattedTitle = "404 · Page not found";
+---
+
+<GlobalLayout title={formattedTitle}>
+  <div class="space-y-14">
+    <PageTitle>🤡 · Page not found</PageTitle>
+    <TextBlock>
+      <a href="/">Go home</a>
+    </TextBlock>
+  </div>
+</GlobalLayout>
