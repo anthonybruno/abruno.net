@@ -48,9 +48,10 @@ const {
 } = Astro.props;
 
 const { projectNavItems } = data as ProjectItems;
+const formattedTitle = `${title} · Anthony Bruno · Denver, CO`;
 ---
 
-<GlobalLayout back={true}>
+<GlobalLayout title={formattedTitle} back={true}>
   <div class="pb-8">
     <PictureBlock image={primaryImage.image} alt={primaryImage.alt} />
   </div>

@@ -3,18 +3,50 @@ import "../styles/global.css";
 
 interface Props {
   back?: boolean;
+  title: string;
 }
 
-const { back = false } = Astro.props;
+const { back = false, title } = Astro.props;
+const OGDescription =
+  "With 15+ years of experience in front-end development and product leadership, I excel in crafting scalable web applications and spearheading engineering-wide strategies.";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌️</text></svg>"
+    />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={OGDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abruno.net" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={OGDescription} />
+    <meta property="og:image" content="https://abruno.net/og-share.png" />
+    <meta name="twitter:site" content="@tloncorporation" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={OGDescription} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://abruno.net/og-share.png" />
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-9RG20E958Q"></script>
+    <script type="text/partytown" is:inline>
+      // @ts-ignore
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        // @ts-ignore
+        dataLayer.push(arguments);
+      }
+      // @ts-ignore
+      gtag("js", new Date());
+      // @ts-ignore
+      gtag("config", "G-9RG20E958Q");
+    </script>
   </head>
   <body
     class="mx-5 tracking-tight text-neutral-800 md:mx-10 dark:text-neutral-100"
