@@ -2,26 +2,17 @@
 import { type projectNavItem } from "@utils/types";
 
 interface Props {
-  title: string;
   items: projectNavItem[];
 }
 
-const { title, items } = Astro.props;
-const path = Astro.url.pathname;
-let filteredItems = items;
-
-if (path.includes("/project/")) {
-  filteredItems = items.filter(
-    item => item.url !== path.replace("/project/", "")
-  );
-}
+const { items } = Astro.props;
 ---
 
 <div>
-  <h2 class="pb-8">{title}</h2>
+  <h2 class="pb-8">Projects</h2>
   <ul class="space-y-6">
     {
-      filteredItems.map((item: projectNavItem) => (
+      items.map((item: projectNavItem) => (
         <li>
           <a
             class="group block"
