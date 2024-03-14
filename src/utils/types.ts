@@ -2,7 +2,6 @@
 export interface projectNavItem {
   title: string;
   subtitle: string;
-  action: string;
-  blank: boolean;
+  external: boolean;
   url: string;
 }

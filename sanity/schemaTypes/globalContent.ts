@@ -34,9 +34,10 @@ export default defineType({
               validation: (rule: any) => rule.required(),
             },
             { 
-              name: "action", 
-              title: "Action label",
-              type: "string",
+              name: "external", 
+              title: "External link?",
+              type: "boolean",
+              initialValue: false,
               validation: (rule: any) => rule.required(),
             },
             { 

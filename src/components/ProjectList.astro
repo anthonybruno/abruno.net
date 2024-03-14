@@ -25,14 +25,19 @@ if (path.includes("/project/")) {
         <li>
           <a
             class="group block"
-            href={item.blank ? item.url : `/project/${item.url}`}
-            target={item.blank ? "_blank" : "_self"}
+            href={item.external ? item.url : `/project/${item.url}`}
+            target={item.external ? "_blank" : "_self"}
           >
-            <div class="flex items-center">
-              <h6 class="grow group-hover:text-blue-500">{item.title}</h6>
-              <span class="text-blue-500 opacity-0 transition-opacity group-hover:opacity-100">
-                {item.action}
-              </span>
+            <div class="flex items-center space-x-4">
+              <h6
+                class:list={[
+                  "transition-color group-hover:text-blue-500",
+                  { "after:content-['_↗']": item.external === true },
+                  { "after:content-['_→']": item.external === false },
+                ]}
+              >
+                {item.title}
+              </h6>
             </div>
             <span class="dimmed-text">{item.subtitle}</span>
           </a>

@@ -6,7 +6,7 @@ export async function getProjectList() {
   "projectNavItems": projectListItems[] {
       title,
       subtitle,
-      action,
+      external,
       url
     }
   }`;
@@ -19,7 +19,7 @@ export async function getHome() {
     "projectNavItems": projectListItems[] {
       title,
       subtitle,
-      action,
+      external,
       url
     },
     "contactItems": contactItems[] {

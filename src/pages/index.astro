@@ -39,8 +39,11 @@ const { bio, projectNavItems, contactItems } = data as Props;
         {
           contactItems.map((item: contactItem) => (
             <li>
-              <a class="after:content-['_↗']" href={item.url}>
-                <span class="underline">{item.label}</span>
+              <a
+                class="transition-opacity after:content-['_↗'] hover:text-blue-500"
+                href={item.url}
+              >
+                {item.label}
               </a>
             </li>
           ))

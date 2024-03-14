@@ -3,19 +3,22 @@
   <ul class="space-y-4">
     <li>
       <a
+        class="group"
         href="https://duckduckgo.com/?q=denver+colorado&atb=v338-1&ia=web&iax=about&iaxm=maps"
       >
-        <h6>Denver, CO</h6>
-        <span class="dimmed-text">
+        <h6 class="transition-color group-hover:text-blue-500">Denver, CO</h6>
+        <span class="dimmed-text inline-block">
           Where it&rsquo;s about <span x-text="cool.temp"></span> degrees at
           <span x-text="currentTime()"></span>
         </span>
       </a>
     </li>
     <li>
-      <a x-bind:href="cool.link">
-        <h6><span x-text="cool.trackArtist"></span></h6>
-        <span class="dimmed-text">
+      <a class="group" x-bind:href="cool.link">
+        <h6 class="transition-color group-hover:text-blue-500">
+          <span x-text="cool.trackArtist"></span>
+        </h6>
+        <span class="dimmed-text inline-block">
           On Spotify <span x-text="cool.lastUpdatedDistance"></span>
         </span>
       </a>
