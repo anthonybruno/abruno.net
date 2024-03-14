@@ -1,47 +1,22 @@
-# Astro Starter Kit: Minimal
+## ✌️ About
 
-```sh
-npm create astro@latest -- --template minimal
-```
+As a lead front end developer and product lead, I've accumulated over 15 years of experience crafting scalable, accessible, and responsive web applications. Moreover, I've effectively managed complex, long-term projects, fostering collaboration among multidisciplinary teams, and navigating cross-functional stakeholder relationships to deliver innovative solutions.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+I am interested in spearheading engineering-wide strategies and managing intricate projects. My focus lies in translating meticulously crafted initiatives into detail-oriented solutions.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[**View Portfolio ↗**](https://abruno.net)
 
-## 🚀 Project Structure
+## 🌎 Built with
 
-Inside of your Astro project, you'll see the following folders and files:
+**Tech**
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- [Astro](https://astro.build)
+- [Sanity](https://www.sanity.io)
+- [Tailwind](https://tailwindcss.com)
+- [Vercel](https://vercel.com)
+- [Weather](https://openweathermap.org)
+- [Spotify](https://developer.spotify.com/console/get-users-currently-playing-track)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Typography**
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Inter](https://fonts.google.com/specimen/Inter)
