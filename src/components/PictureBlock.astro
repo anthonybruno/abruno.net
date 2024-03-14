@@ -2,8 +2,8 @@
 import { urlForImage } from "@utils/urlForImage";
 
 const { image, alt } = Astro.props;
-const url = urlForImage(image).width(1135).url();
-const webpUrl = urlForImage(image).format("webp").width(1135).url();
+const url = urlForImage(image).url();
+const webpUrl = urlForImage(image).format("webp").url();
 ---
 
 <picture>
