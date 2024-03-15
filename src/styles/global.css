@@ -26,6 +26,6 @@
 
 @layer components {
   .dimmed-text {
-    @apply text-neutral-400 dark:text-neutral-500;
+    @apply text-neutral-500;
   }
 }

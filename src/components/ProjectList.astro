@@ -19,17 +19,15 @@ const { items } = Astro.props;
             href={item.external ? item.url : `/project/${item.url}`}
             target={item.external ? "_blank" : "_self"}
           >
-            <div class="flex items-center space-x-4">
-              <h6
-                class:list={[
-                  "transition-color group-hover:text-blue-500",
-                  { "after:content-['_↗']": item.external === true },
-                  { "after:content-['_→']": item.external === false },
-                ]}
-              >
-                {item.title}
-              </h6>
-            </div>
+            <p
+              class:list={[
+                "transition-color group-hover:text-blue-500",
+                { "after:content-['_↗']": item.external === true },
+                { "after:content-['_→']": item.external === false },
+              ]}
+            >
+              {item.title}
+            </p>
             <span class="dimmed-text">{item.subtitle}</span>
           </a>
         </li>
