@@ -3,7 +3,7 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      sans: ["Inter", "system-ui", "sans-serif"],
+      sans: ["system-ui", "sans-serif"],
     },
     extend: {
       maxWidth: {
@@ -11,10 +11,8 @@ export default {
         'lg': '49.6875rem' // 795px
       },
       fontSize: {
-        '2xl': '1.625rem', // 26px
-      },
-      letterSpacing: {
-        'tight': '-0.00625rem' // -0.1px
+        // '2xl': '1.625rem', // 26px
+        '3xl': '1.75rem', // 28px
       },
       lineHeight: {
         'loose': '1.625rem'
