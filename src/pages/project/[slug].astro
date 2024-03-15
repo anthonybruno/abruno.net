@@ -62,8 +62,8 @@ const formattedTitle = `${title} · Anthony Bruno · Denver, CO`;
     </PageTitle>
     <div class="items-start max-sm:space-y-14 sm:flex sm:space-x-14">
       <div class="lg:w-1/2">
-        <h5>Technical</h5>
-        <ul class="text-neutral-400">
+        <span>Technical</span>
+        <ul class="dimmed-text">
           {
             technicalItems.map((item: string) => (
               <li>
@@ -74,8 +74,8 @@ const formattedTitle = `${title} · Anthony Bruno · Denver, CO`;
         </ul>
       </div>
       <div class="lg:w-1/2">
-        <h5>Strategy</h5>
-        <ul class="text-neutral-400">
+        <span>Strategy</span>
+        <ul class="dimmed-text">
           {
             strategyItems.map((item: string) => (
               <li>
@@ -94,7 +94,7 @@ const formattedTitle = `${title} · Anthony Bruno · Denver, CO`;
         {
           actionItems.map((item: actionItem) => (
             <li>
-              <a class="group text-blue-500" href={item.url} target="_blank">
+              <a class="group text-blue-600" href={item.url} target="_blank">
                 <span class="underline decoration-transparent underline-offset-2 transition-all group-hover:decoration-blue-200 group-hover:dark:decoration-neutral-600">
                   {item.label}
                 </span>
