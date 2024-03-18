@@ -21,7 +21,7 @@ const { items } = Astro.props;
           >
             <p
               class:list={[
-                "transition-color group-hover:text-violet-600",
+                "transition-color group-hover:text-blue-600",
                 { "after:content-['_↗']": item.external === true },
                 { "after:content-['_→']": item.external === false },
               ]}
