@@ -24,7 +24,10 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
-    alpinejs(),
-    sitemap()
+    sitemap({
+      filter: (page) =>
+        page !== 'https://abruno.net/copy-mailto-privacy/'
+    }),
+    alpinejs()
   ]
 });
