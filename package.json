@@ -21,13 +21,15 @@
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/sitemap": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
-    "@sanity/astro": "^2.2.1",
-    "@sanity/client": "^6.15.3",
+    "@sanity/astro": "^3.0.0",
+    "@sanity/client": "^6.15.7",
     "@types/alpinejs": "^3.13.7",
     "alpinejs": "^3.13.7",
     "astro": "^4.5.1",
     "astro-portabletext": "^0.9.6",
     "date-fns": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
   },
@@ -36,13 +38,13 @@
     "@typescript-eslint/parser": "^7.2.0",
     "astro-eslint-parser": "^0.16.3",
     "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^0.31.4",
+    "eslint-plugin-astro": "^0.33.1",
     "postcss-nesting": "^12.1.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.12"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
 }
