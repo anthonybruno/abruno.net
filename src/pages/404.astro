@@ -6,11 +6,15 @@ import TextBlock from "../components/TextBlock.astro";
 const formattedTitle = "404 · Page not found";
 ---
 
-<GlobalLayout title={formattedTitle}>
+<GlobalLayout title={formattedTitle} back={true}>
   <div class="space-y-14">
-    <PageTitle>🤡 · Page not found</PageTitle>
+    <PageTitle>🌀</PageTitle>
     <TextBlock>
-      <a href="/">Go home</a>
+      <p>
+        Lost in the digital maze,<br />
+        Page not found, a silent cry,<br />
+        Error: 404.
+      </p>
     </TextBlock>
   </div>
 </GlobalLayout>
