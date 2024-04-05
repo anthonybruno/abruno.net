@@ -4,12 +4,12 @@ As a lead front end developer and product lead, I've got over 15 years of experi
 
 I am interested in spearheading engineering-wide strategies and managing intricate projects. My focus lies in translating meticulously crafted initiatives into detail-oriented solutions.
 
-[**View Portfolio ↗**](https://abruno.net)
+[View portfolio →](https://abruno.net)
 
 ## ✨ Get in touch
 
 - [Email](mailto:anthonybruno@gmail.com)
-- [Read.cv](https://read.cv/abruno)
+- [Read.cv](https://abruno.read.cv)
 - [LinkedIn](https://linkedin.com/in/brunotony)
 
 ## 📍 Built with
@@ -20,9 +20,4 @@ I am interested in spearheading engineering-wide strategies and managing intrica
 - [Sanity](https://www.sanity.io)
 - [Tailwind](https://tailwindcss.com)
 - [Vercel](https://vercel.com)
-- [Weather](https://openweathermap.org)
-- [Spotify](https://developer.spotify.com/console/get-users-currently-playing-track)
-
-**Typography**
-
-- [Inter](https://fonts.google.com/specimen/Inter)
+- [Cool API](https://github.com/anthonybruno/cool-api)
