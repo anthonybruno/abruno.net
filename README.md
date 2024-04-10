@@ -1,8 +1,8 @@
 ## ✌️ About
 
-As a lead front end developer and product lead, I've got over 15 years of experience crafting scalable, accessible, and responsive web applications. Moreover, I've effectively managed complex, long-term projects, fostering collaboration among multidisciplinary teams, and navigating cross-functional stakeholder relationships to deliver innovative solutions.
+I’m a front-end developer with over 15 years of experience creating scaleable, accessible, and responsive experiences for the web. I’ve got a deep understanding and passion for leading complex long-term projects, advocating for processes and standards, and collaborating with multidisciplinary teams and stakeholders to create impactful solutions.
 
-I am interested in spearheading engineering-wide strategies and managing intricate projects. My focus lies in translating meticulously crafted initiatives into detail-oriented solutions.
+Currently, I’m focused on empowering teams, simplifying workflows, and delivering the highest quality features and products possible.
 
 [View portfolio →](https://abruno.net)
 
