@@ -32,6 +32,7 @@ interface primaryImageObj {
 interface actionItem {
   url: string;
   label: string;
+  new_window: boolean;
 }
 
 interface ProjectItems {
@@ -94,11 +95,15 @@ const formattedTitle = `${title} · Anthony Bruno · Denver, CO`;
         {
           actionItems.map((item: actionItem) => (
             <li>
-              <a class="group text-blue-600" href={item.url}>
+              <a
+                class="group text-blue-600"
+                href={item.url}
+                target={item.new_window ? "_blank" : "_self"}
+              >
                 <span class="underline decoration-transparent underline-offset-2 transition-all group-hover:decoration-blue-200 group-hover:dark:decoration-neutral-600">
                   {item.label}
                 </span>
-                <span>↗</span>
+                {item.new_window ? <span>↗</span> : <span>→</span>}
               </a>
             </li>
           ))

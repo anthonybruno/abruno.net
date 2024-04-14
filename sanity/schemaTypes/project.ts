@@ -74,6 +74,11 @@ export default defineType({
               type: "url", 
               name: "url",
               validation: (rule) => rule.required(),
+            },
+            { 
+              type: "boolean", 
+              name: "new_window",
+              validation: (rule) => rule.required(),
             }
           ]
         }

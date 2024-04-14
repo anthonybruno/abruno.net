@@ -41,7 +41,8 @@ export async function getProjects() {
     strategyItems,
     "actionItems": actionItems[] {
       url,
-      label
+      label,
+      new_window
     },
     primaryImage
   }`;
