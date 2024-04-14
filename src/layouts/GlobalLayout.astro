@@ -4,9 +4,16 @@ import "../styles/global.css";
 interface Props {
   back?: boolean;
   title: string;
+  backLabel?: string;
+  backRoute?: string;
 }
 
-const { back = false, title } = Astro.props;
+const {
+  back = false,
+  backRoute = "/",
+  backLabel = "Back to Home",
+  title,
+} = Astro.props;
 const OGDescription =
   "I'm an experienced front-end developer passionate about leading projects and delivering high-quality experiences.";
 ---
@@ -61,9 +68,9 @@ const OGDescription =
           <nav class="col-span-2 col-start-2 max-lg:mx-auto max-lg:pb-12">
             <a
               class="dimmed-text sticky top-10 whitespace-nowrap text-base leading-none transition-colors hover:text-blue-600"
-              href="/"
+              href={backRoute}
             >
-              ← Back to Home
+              ← {backLabel}
             </a>
           </nav>
         )

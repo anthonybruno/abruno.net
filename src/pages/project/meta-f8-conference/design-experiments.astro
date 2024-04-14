@@ -1,0 +1,62 @@
+---
+import GlobalLayout from "@layouts/GlobalLayout.astro";
+import PageTitle from "@components/PageTitle.astro";
+import TextBlock from "@components/TextBlock.astro";
+import PreviewNotice from "@components/PreviewNotice.astro";
+
+const url = "https://abruno-f8-static.vercel.app";
+---
+
+<GlobalLayout
+  title="Design Experiments • Meta F8 Conference"
+  back={true}
+  backLabel="Back to Case Study"
+  backRoute="./"
+>
+  <div class="space-y-14">
+    <PageTitle>Meta F8 Conference</PageTitle>
+    <PreviewNotice />
+    <TextBlock>
+      <h2>Shape Experiments</h2>
+      <ul>
+        <li>
+          <a href={`${url}/shapes/e/octahedron.html`} target="_blank"
+            >Octahedron</a
+          >
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/icosahedron.html`} target="_blank"
+            >Icosahedron</a
+          >
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/tetrahedron.html`} target="_blank"
+            >Tetrahedron</a
+          >
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/cube.html`} target="_blank">Cube</a>
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/cone.html`} target="_blank">Cone</a>
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/cylinder.html`} target="_blank">Cylinder</a>
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/torus.html`} target="_blank">Torus</a>
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/torus-knot.html`} target="_blank">
+            Torus Knot
+          </a>
+        </li>
+        <li>
+          <a href={`${url}/shapes/e/orthographic-camera.html`} target="_blank">
+            Orthographic Camera
+          </a>
+        </li>
+      </ul>
+    </TextBlock>
+  </div>
+</GlobalLayout>
