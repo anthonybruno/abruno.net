@@ -7,7 +7,6 @@ import PageTitle from "@components/PageTitle.astro";
 import ProjectList from "@components/ProjectList.astro";
 import PortableText from "@components/PortableText.astro";
 import TextBlock from "@components/TextBlock.astro";
-import Currently from "@components/Currently.html";
 
 interface Props {
   bio: string;
@@ -51,7 +50,5 @@ const { bio, projectNavItems, contactItems } = data as Props;
         }
       </ul>
     </div>
-
-    <Currently client:load />
   </div>
 </GlobalLayout>
