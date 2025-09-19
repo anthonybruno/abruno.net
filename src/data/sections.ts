@@ -7,7 +7,7 @@ export const sections: Section[] = [
       {
         name: 'Signal',
         description:
-          'Interactive portfolio built as a multi-service AI system.',
+          'An interactive portfolio built as a multi-service AI system.',
         url: 'https://signal.abruno.net',
         color: 'text-tony-mint',
         icon: 'signal-icon',
@@ -16,7 +16,7 @@ export const sections: Section[] = [
       },
       {
         name: 'Studies',
-        description: 'Deep dives on some recent projects.',
+        description: 'In-depth looks at projects and process.',
         url: 'https://studies.abruno.net',
         color: 'text-tony-blueberry',
         icon: 'studies-icon',
@@ -25,7 +25,7 @@ export const sections: Section[] = [
       },
       {
         name: 'Thoughts',
-        description: 'I guess you gotta write stuff every now and then.',
+        description: 'Reflections on leadership, engineering, and AI.',
         url: 'https://thoughts.abruno.net',
         color: 'text-tony-cherry',
         icon: 'thoughts-icon',
@@ -35,11 +35,12 @@ export const sections: Section[] = [
     ],
   },
   {
-    title: 'Side Projects',
+    title: 'Tools and experiments',
     items: [
       {
         name: 'dev-config',
-        description: 'Shared tooling for ESLint, Prettier, and commits.',
+        description:
+          'Shared developer tooling for ESLint, Prettier, and commits.',
         url: 'https://npmjs.com/package/abruno-dev-config',
       },
       {
