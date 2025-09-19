@@ -8,7 +8,7 @@ export const sections: Section[] = [
         name: 'Signal',
         description:
           'Interactive portfolio built as a multi-service AI system.',
-        url: '',
+        url: 'https://signal.abruno.net',
         color: 'text-tony-mint',
         icon: 'signal-icon',
         iconWidth: 16,
@@ -17,7 +17,7 @@ export const sections: Section[] = [
       {
         name: 'Studies',
         description: 'Deep dives on some recent projects.',
-        url: '',
+        url: 'https://studies.abruno.net',
         color: 'text-tony-blueberry',
         icon: 'studies-icon',
         iconWidth: 15,
@@ -26,7 +26,7 @@ export const sections: Section[] = [
       {
         name: 'Thoughts',
         description: 'I guess you gotta write stuff every now and then.',
-        url: '',
+        url: 'https://thoughts.abruno.net',
         color: 'text-tony-cherry',
         icon: 'thoughts-icon',
         iconWidth: 20,
