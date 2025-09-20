@@ -7,7 +7,7 @@ export const sections: Section[] = [
       {
         name: 'Signal',
         description:
-          'An interactive portfolio built as a multi-service AI system.',
+          'A portfolio reimagined as a multi-service agentic platform.',
         url: 'https://signal.abruno.net',
         color: 'text-tony-mint',
         icon: 'signal-icon',
