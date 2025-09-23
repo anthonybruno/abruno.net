@@ -59,7 +59,7 @@ export const Currently = () => {
               {currentlyData?.description || 'Loading...'}
             </span>
             {currentlyData?.timestamp && (
-              <span class="text-tony-300 text-sm block mt-1">
+              <span class="text-tony-400 text-sm block mt-1">
                 about{' '}
                 {formatDistanceToNow(currentlyData.timestamp, {
                   addSuffix: true,

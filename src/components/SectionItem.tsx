@@ -20,13 +20,13 @@ export const SectionItem = ({ item }: SectionItemProps) => (
         )}
         <span
           class={`block font-medium group-hover:underline underline-offset-2 ${
-            item.color || 'text-tony-700 dark:text-tony-200'
+            item.color || 'text-tony-700 dark:text-tony-100'
           }`}
         >
           {item.name}
         </span>
       </div>
-      <span class="text-tony-400">{item.description}</span>
+      <span class="text-tony-400 dark:text-tony-300">{item.description}</span>
     </a>
   </li>
 );
