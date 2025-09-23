@@ -15,7 +15,7 @@ export const sections: Section[] = [
         iconHeight: 16,
       },
       {
-        name: 'Studies',
+        name: 'Case Studies',
         description: 'In-depth looks at projects and process.',
         url: 'https://studies.abruno.net',
         color: 'text-tony-blueberry',
@@ -24,7 +24,7 @@ export const sections: Section[] = [
         iconHeight: 14,
       },
       {
-        name: 'Thoughts',
+        name: 'Notes',
         description: 'Reflections on leadership, engineering, and AI.',
         url: 'https://thoughts.abruno.net',
         color: 'text-tony-cherry',
@@ -45,7 +45,7 @@ export const sections: Section[] = [
       },
       {
         name: 'gpt-auto-commit',
-        description: 'CLI to automatically generate commits with GPT-4o.',
+        description: 'AI that creates commit messages for you.',
         url: 'https://npmjs.com/package/gpt-auto-commit',
       },
       {
