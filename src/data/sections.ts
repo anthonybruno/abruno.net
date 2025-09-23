@@ -24,7 +24,7 @@ export const sections: Section[] = [
         iconHeight: 14,
       },
       {
-        name: 'Notes',
+        name: 'Thoughts',
         description: 'Reflections on leadership, engineering, and AI.',
         url: 'https://thoughts.abruno.net',
         color: 'text-tony-cherry',
