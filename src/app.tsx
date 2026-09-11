@@ -29,7 +29,7 @@ export function App() {
           {sections.map((section) => (
             <Section key={section.title} section={section} />
           ))}
-          <Currently />
+          {/* <Currently /> */}
         </main>
         <footer class="pt-40">
           <span class="text-tony-400">&copy; {new Date().getFullYear()}</span>
