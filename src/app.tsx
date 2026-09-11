@@ -1,6 +1,6 @@
 import { sections } from '@/data/sections';
 import { Section } from '@/components/Section';
-import { Currently } from '@/components/Currently';
+// import { Currently } from '@/components/Currently';
 import avatar from '@/assets/anthony-bruno-avatar@2x.png';
 
 export function App() {
