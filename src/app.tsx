@@ -1,6 +1,5 @@
 import { sections } from '@/data/sections';
-import { Section } from '@/components/Section';
-// import { Currently } from '@/components/Currently';
+import { SectionItem } from '@/components/SectionItem';
 import avatar from '@/assets/anthony-bruno-avatar@2x.png';
 
 export function App() {
@@ -15,7 +14,7 @@ export function App() {
           />
         </div>
       </aside>
-      <div class="max-w-md ">
+      <div class="max-w-md">
         <header class="pb-9 space-y-3">
           <h1 class="text-2xl md:text-[40px] leading-none font-bold md:tracking-tight">
             Anthony Bruno
@@ -27,9 +26,17 @@ export function App() {
         </header>
         <main class="space-y-12">
           {sections.map((section) => (
-            <Section key={section.title} section={section} />
+            <section key={section.title}>
+              <h3 class="text-xl font-semibold tracking-tight leading-none pb-9">
+                {section.title}
+              </h3>
+              <ul class="space-y-4">
+                {section.items.map((item) => (
+                  <SectionItem key={item.name} item={item} />
+                ))}
+              </ul>
+            </section>
           ))}
-          {/* <Currently /> */}
         </main>
         <footer class="pt-40">
           <span class="text-tony-400">&copy; {new Date().getFullYear()}</span>

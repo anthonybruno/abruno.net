@@ -1,21 +1,14 @@
-import { SpriteIcon } from '@/components/SpriteIcon';
 import type { SectionItem as SectionItemType } from '@/types';
 
-interface SectionItemProps {
-  item: SectionItemType;
-}
-
-export const SectionItem = ({ item }: SectionItemProps) => (
+export const SectionItem = ({ item }: { item: SectionItemType }) => (
   <li>
     <a class="block group" href={item.url}>
       <div class="flex items-center gap-1">
         {item.icon && (
-          <span class={`${item.color || ''}`}>
-            <SpriteIcon
-              name={item.icon}
-              width={item.iconWidth}
-              height={item.iconHeight}
-            />
+          <span class={item.color}>
+            <svg width={item.iconWidth ?? 12} height={item.iconHeight ?? 12}>
+              <use href={`#${item.icon}`} />
+            </svg>
           </span>
         )}
         <span
